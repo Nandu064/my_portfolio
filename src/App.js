@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      My first web app
+      My first react application
     </div>
   );
 }
