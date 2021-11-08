@@ -4,7 +4,7 @@ import {
     Row,
     Col,
 } from 'reactstrap'
-import './footer.scss'
+import styles from './footer.module.css'
 
 import axios from 'axios'
 
@@ -18,13 +18,13 @@ function Footer() {
     // }, [])
     return (
         <Fragment>
-            <Container fluid className='copyright_container'>
+            <Container fluid className={styles.copyright_container}>
                 <Row>
                     <Col md='6'>
-                        <span className="text-muted">&copy;2021-<a href="#" className="copyright_link">Y.Harish</a> All rights reserved</span>
+                        <span className="text-muted">&copy;2021-<a href="#" className={styles.copyright_link}>Y.Harish</a> All rights reserved</span>
                     </Col>
                     <Col md='6'>
-
+                        
                     </Col>
                 </Row>
             </Container>

@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import styles from './NavBar.module.css'
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -28,8 +29,8 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div className="header_container">
-        <Navbar color="dark" dark expand="md">
+      <div className={styles.header_container}>
+        <Navbar className={`d-flex justify-content-between`} color="dark" dark expand="md">
           <NavbarBrand className="text-white"href="/">My Portfolio</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

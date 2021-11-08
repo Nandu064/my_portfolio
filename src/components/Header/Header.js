@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{Fragment,useEffect} from 'react'
 import {
     Carousel,
     Row,
@@ -9,9 +9,17 @@ import {
 
 function Header() {
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <Container fluid>
+                <Row>
+                    <Col md="12">
+                        <div>
+                            
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </Fragment>
     )
 }
 
