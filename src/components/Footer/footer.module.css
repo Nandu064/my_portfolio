@@ -1,7 +1,3 @@
-.copyright_container{
-    position: fixed;
-    bottom: 5px;
-}
-.copyright_container .copyright_link{
-    text-decoration: none;
+.footer_container{
+    background: #f6f5f5 !important;
 }

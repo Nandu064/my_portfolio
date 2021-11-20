@@ -1,0 +1,40 @@
+.url_container{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: .2s ease;
+    color: #f6f5f5;
+}
+
+.card_container{
+    position: relative;
+}
+.card_container a:hover{
+    color: #f6f5f5;
+    font-size: 18px;
+}
+
+.overlay{
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 2px;
+    transition: .5s ease;
+}
+
+.card_container:hover .overlay{
+    height: 100%;
+}
+.card_container:hover .url_container{
+    visibility: visible;
+}
+.slick-arrow{
+    color: black;
+
+}
