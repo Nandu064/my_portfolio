@@ -13,13 +13,14 @@ import {
 } from 'reactstrap'
 import styles from './Header.module.css'
 import Resume from '../../assets/resume/HarishResume.pdf'
+import mypic from '../../assets/images/mypic.jpg'
 
 function Header() {
     return (
         <Fragment>
             <Container id="about" fluid>
                 <Row>
-                    <Col md="6">
+                    <Col md="12" lg='12' xl='12' xxl='6'>
                         <div className={`${styles.about_container} mt-4 d-flex justify-content-center flex-column p-5`}>
                             <Row>
                                 <Col md='12'>
@@ -31,12 +32,12 @@ function Header() {
                                 </Col>
                             </Row>
                             <Row className={`${styles.button_container} mt-5`}>
-                                <Col sm='12' md='6'>
-                                    <div className='d-flex justify-content-between'>
-                                        <a className='ms-md-5' href="#contact">
+                                <Col md='6' >
+                                    <div className='d-flex justify-content-end'>
+                                        <a className='' href="#contact">
                                             <Button size="sm" color='primary'>Hire Me</Button>
                                         </a>
-                                        <a className='me-md-3' href={Resume} download={`Harish's Resume`}>
+                                        <a className='ms-2' href={Resume} download={`Harish's Resume`}>
                                             <Button size="sm" color='secondary'>Download CV</Button>                                
                                         </a>
                                     </div>
